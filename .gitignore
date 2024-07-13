@@ -1,0 +1,4 @@
+# Compiler outputs #
+*.a
+*.bat
+*.exe
