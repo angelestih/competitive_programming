@@ -32,3 +32,16 @@ vector<int> getFactorization(int n){
     return factors;
 }
 
+int main(int argc, char const* ){
+    sieve();
+    int n = 10000;
+    cout << "Prime factorization of "<< n <<" is ";
+    vector<int> factors = getFactorization(n);
+
+    for (int i=0; i < factors.size(); i++){
+        cout << factors[i] << " ";
+    
+    }
+    cout << endl;
+    return 0;
+}
