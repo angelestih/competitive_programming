@@ -44,7 +44,7 @@ int rangeBitwiseAND(vector<vector<int>>& psum, int l, int r)
     int result = 0;
     for (int j = 0; j < 32; ++j)
     {
-        /* calculate the count of eleents with jth bit set in range[l, r] */
+        /* calculate the count of elements with jth bit set in range[l, r] */
         int count = psum[r][j] - psum[l-1][j];
 
         if (count == r-l+1)
